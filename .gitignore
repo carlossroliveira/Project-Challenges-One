@@ -1,4 +1,12 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+# Sass
 .sass-cache/
 *.css.map
 *.sass.map
 *.scss.map
+# misc
+.DS_Store
+*.pem

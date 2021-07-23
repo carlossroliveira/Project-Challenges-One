@@ -1,0 +1,20 @@
+{
+  "name": "Project-Mdsystem",
+  "version": "1.0.0",
+  "description": "Desafio - Mdsystem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlossroliveira/Project-Mdsystem.git"
+  },
+  "keywords": [],
+  "author": "Carlos Olivira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlossroliveira/Project-Mdsystem/issues"
+  },
+  "homepage": "https://github.com/carlossroliveira/Project-Mdsystem#readme"
+}

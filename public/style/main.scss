@@ -1,0 +1,376 @@
+// ============================== Configuration initial
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import '_header';
+@import '_bannerMain';
+
+/* ===== Desktop ============================== */
+@media(max-width: 1440px) {
+  html {
+    font-size: 100%; // Tamanho da fonte 16px
+
+    body {
+      background-color: tomato; //tira essa linha
+
+      .container {
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-areas:
+            "heade heade heade heade"
+            "modal modal modal modal"
+            "main main main main"
+            "footer footer footer footer";
+
+
+
+
+          .aboutMain {
+            grid-area: main;
+            background-color: white;
+
+            height: 30rem;
+
+            .aboutMainTwo {
+              font-family: 'Poppins';
+
+              width: 80vw;
+              margin: 0rem auto;
+
+              display: flex;
+              justify-content: center;
+
+              text-transform: uppercase;
+              letter-spacing: 1.3px;
+              color: #2A2C34;
+
+              position: relative;
+              padding-top: 5rem;
+
+              .range {
+                position: absolute;
+                margin-top: 1rem;
+
+                width: 0.313rem;
+                height: 4rem;
+                background-color: #FD300F;
+                transform: rotate(90deg);
+              }
+            }
+
+            .containerAbout {
+              background-color: #2A2C34;
+              color: white;
+
+              width: 80vw;
+              margin: 0rem auto;
+              margin-top: 5rem;
+              overflow: hidden;
+
+              .aboutNavigation {
+
+                ul {
+                  display: flex;
+                  list-style: none;
+                  background-color: #646672;
+
+
+                  li {
+                    padding: 15px 20px;
+                    font-weight: 700;
+                    cursor: pointer;
+
+                    &:hover {
+                      color: #ffffffa4;
+                      transition: all 0.2s ease-in-out;
+                    }
+                  }
+
+                  /* ===== Classes adicionada pelo JS ============================== */
+                  .backgroundOne {
+                    background-color: #2A2C34;
+                  }
+
+                  .colorsOne {
+                    color: white;
+                    background-color: #2A2C34;
+                  }
+
+                  .colorsTwo {
+                    color: white;
+                    background-color: #2A2C34;
+                  }
+
+                  .colorsThree {
+                    color: white;
+                    background-color: #2A2C34;
+                  }
+
+                  .colorStandard {
+                    color: white;
+                    background-color: #646672;
+                  }
+
+                }
+              }
+
+              section {
+
+                article {
+                  padding: 3rem;
+                }
+
+                .vision {
+                  background-color: #2A2C34;
+                  display: none;
+                }
+
+                .values {
+                  background-color: #2A2C34;
+                  display: none;
+                }
+
+                /* ===== Classes adicionada pelo JS ============================== */
+                .mission-active {
+                  display: block;
+                }
+
+                .vision-active {
+                  display: block;
+                }
+
+                .values-active {
+                  display: block;
+                }
+
+                .mission-none {
+                  display: none;
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+                .aboutTitle {
+
+                  background-color: rgb(173, 132, 173);
+                }
+              }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+          }
+
+
+
+
+
+
+
+
+
+          /* .footerMain {
+            grid-area: footer;
+            background-color: rgb(133, 113, 133);
+          } */
+        }
+      }
+
+    }
+  }
+}
+
+/* ===== Tablet ============================== */
+@media(max-width: 1024px) {
+  html {
+
+    font-size: 93.75%; // Tamanho da fonte 15px
+
+    body {}
+  }
+}
+
+/* ===== Mobile ============================== */
+@media(max-width: 768px) {
+  html {
+    font-size: 87.5%; // Tamanho da fonte 14px
+
+    body {
+      .container {
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-areas:
+            "heade"
+            "modal"
+            "main"
+            "footer";
+
+          /* ===== header ============================== */
+          .headerMain {
+            .headerSection {
+              width: 54vw;
+              margin: 0 0 0 auto;
+
+              .navigation {
+                display: block;
+                text-align: center;
+
+                .menu {
+                  display: block;
+                  position: absolute;
+                  width: 100%;
+                  top: 70px;
+                  right: 0px;
+
+                  background-color: #363841;
+                  transition: 0.6s;
+                  z-index: 10;
+                  height: 0px;
+                  visibility: hidden;
+                  overflow-y: hidden !important;
+
+                  li:nth-child(4) {
+                    display: block;
+                    padding-top: 10rem;
+                    font-size: 3rem;
+                    font-family: cursive;
+
+                    a {
+                      border: none;
+                    }
+                  }
+
+                  li+li {
+
+                    margin-left: unset;
+                  }
+
+                  a {
+                    width: 400px;
+                    margin: 0 auto;
+                    padding: 20px;
+                    border-bottom: 2px solid white;
+                  }
+                }
+              }
+
+              .navigation.active .menu {
+                height: calc(100vh - 70px);
+                visibility: visible;
+                overflow-y: auto;
+
+              }
+
+              .btn-mobile {
+                display: flex;
+                padding: 0.5rem 1rem;
+                font-size: 1rem;
+                border: none;
+                background: none;
+                cursor: pointer;
+                gap: 0.5rem;
+
+                .hamburger {
+                  border-top: 2px solid;
+                  width: 20px;
+                  color: white;
+                }
+              }
+
+              .hamburger::after,
+              .hamburger::before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 2px;
+                background: currentColor;
+                margin-top: 5px;
+                transition: 0.3s;
+                position: relative;
+              }
+
+              .navigation.active .hamburger {
+                border-top-color: transparent;
+              }
+
+              .navigation.active .hamburger::before {
+                transform: rotate(135deg);
+              }
+
+              .navigation.active .hamburger::after {
+                transform: rotate(-135deg);
+                top: -7px;
+              }
+
+            }
+          }
+
+          /* ===== Main - One ============================== */
+          .bannerMain {
+            .bannerMainOne {
+              .bannerTitle {
+                color: white;
+                font-size: 2.5rem;
+              }
+
+              .bannerParagraph {
+                font-size: 1.5rem;
+              }
+            }
+          }
+
+          /* ===== Main - Two ============================== */
+          .aboutMain {
+            grid-area: main;
+            background-color: rgb(146, 84, 146);
+          }
+
+          /* ===== Footer ============================== */
+          .footerMain {
+            grid-area: footer;
+            background-color: rgb(133, 113, 133);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 320px) {
+  html {
+    font-size: 81.25%; // Tamanho da fonte 13px
+
+    body {
+
+      .headerMain {
+        .headerSection {
+          width: 55vw;
+        }
+      }
+    }
+  }
+}

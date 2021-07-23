@@ -1,0 +1,424 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* ===== Header ============================== */
+.headerMain {
+  grid-area: heade;
+  background-color: #363841;
+  height: 70px;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #363841;
+}
+
+.headerMain .headerSection {
+  width: 80vw;
+  margin: 0rem auto;
+  padding: 1.563rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.headerMain .headerSection .headerTitle {
+  font-family: 'Poppins';
+  font-weight: 400;
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.625rem 0.313rem;
+}
+
+.headerMain .headerSection .headerTitle:hover {
+  color: #ffffffa4;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.headerMain .headerSection .headerTitle::before {
+  content: '';
+  height: 0.938rem;
+  width: 0.313rem;
+  top: 1rem;
+  left: -0.313rem;
+  position: absolute;
+  background-color: #FD300F;
+}
+
+.headerMain .headerSection .navigation > ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.headerMain .headerSection .navigation > ul li:nth-child(4) {
+  display: none;
+  border-bottom: unset;
+}
+
+.headerMain .headerSection .navigation > ul li + li {
+  margin-left: 2rem;
+}
+
+.headerMain .headerSection .navigation > ul a {
+  font-family: 'Poppins';
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+  padding: 0.625rem 0.313rem;
+}
+
+.headerMain .headerSection .navigation > ul a:hover {
+  color: #ffffffa4;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.headerMain .headerSection .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+.headerMain .headerSection .menu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+}
+
+.headerMain .headerSection .btn-mobile {
+  display: none;
+}
+
+/* ===== Main - One ============================== */
+.bannerMain {
+  grid-area: modal;
+}
+
+.bannerMain .bannerMainOne {
+  background-color: #000000;
+  height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bannerMain .bannerMainOne .bannerTitle {
+  width: 80vw;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 2rem !important;
+}
+
+.bannerMain .bannerMainOne .bannerParagraph {
+  width: 80vw;
+  font-weight: 300;
+  margin-top: 1rem;
+  color: #ffffffa4;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 1.2rem !important;
+}
+
+/* ===== Desktop ============================== */
+@media (max-width: 1440px) {
+  html {
+    font-size: 100%;
+  }
+  html body {
+    background-color: tomato;
+  }
+  html body .container .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "heade heade heade heade" "modal modal modal modal" "main main main main" "footer footer footer footer";
+    /* .footerMain {
+            grid-area: footer;
+            background-color: rgb(133, 113, 133);
+          } */
+  }
+  html body .container .grid .aboutMain {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: main;
+    background-color: white;
+    height: 30rem;
+  }
+  html body .container .grid .aboutMain .aboutMainTwo {
+    font-family: 'Poppins';
+    width: 80vw;
+    margin: 0rem auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    color: #2A2C34;
+    position: relative;
+    padding-top: 5rem;
+  }
+  html body .container .grid .aboutMain .aboutMainTwo .range {
+    position: absolute;
+    margin-top: 1rem;
+    width: 0.313rem;
+    height: 4rem;
+    background-color: #FD300F;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  html body .container .grid .aboutMain .containerAbout {
+    background-color: #2A2C34;
+    color: white;
+    width: 80vw;
+    margin: 0rem auto;
+    margin-top: 5rem;
+    overflow: hidden;
+  }
+  html body .container .grid .aboutMain .containerAbout .aboutNavigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    background-color: #646672;
+    /* ===== Classes adicionada pelo JS ============================== */
+  }
+  html body .container .grid .aboutMain .containerAbout .aboutNavigation ul li {
+    padding: 15px 20px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  html body .container .grid .aboutMain .containerAbout .aboutNavigation ul li:hover {
+    color: #ffffffa4;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  html body .container .grid .aboutMain .containerAbout .aboutNavigation ul .backgroundOne {
+    background-color: #2A2C34;
+  }
+  html body .container .grid .aboutMain .containerAbout .aboutNavigation ul .colorsOne {
+    color: white;
+    background-color: #2A2C34;
+  }
+  html body .container .grid .aboutMain .containerAbout .aboutNavigation ul .colorsTwo {
+    color: white;
+    background-color: #2A2C34;
+  }
+  html body .container .grid .aboutMain .containerAbout .aboutNavigation ul .colorsThree {
+    color: white;
+    background-color: #2A2C34;
+  }
+  html body .container .grid .aboutMain .containerAbout .aboutNavigation ul .colorStandard {
+    color: white;
+    background-color: #646672;
+  }
+  html body .container .grid .aboutMain .containerAbout section {
+    /* ===== Classes adicionada pelo JS ============================== */
+  }
+  html body .container .grid .aboutMain .containerAbout section article {
+    padding: 3rem;
+  }
+  html body .container .grid .aboutMain .containerAbout section .vision {
+    background-color: #2A2C34;
+    display: none;
+  }
+  html body .container .grid .aboutMain .containerAbout section .values {
+    background-color: #2A2C34;
+    display: none;
+  }
+  html body .container .grid .aboutMain .containerAbout section .mission-active {
+    display: block;
+  }
+  html body .container .grid .aboutMain .containerAbout section .vision-active {
+    display: block;
+  }
+  html body .container .grid .aboutMain .containerAbout section .values-active {
+    display: block;
+  }
+  html body .container .grid .aboutMain .containerAbout section .mission-none {
+    display: none;
+  }
+  html body .container .grid .aboutMain .containerAbout section .aboutTitle {
+    background-color: #ad84ad;
+  }
+}
+
+/* ===== Tablet ============================== */
+@media (max-width: 1024px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+/* ===== Mobile ============================== */
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+  html body .container .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "heade" "modal" "main" "footer";
+    /* ===== header ============================== */
+    /* ===== Main - One ============================== */
+    /* ===== Main - Two ============================== */
+    /* ===== Footer ============================== */
+  }
+  html body .container .grid .headerMain .headerSection {
+    width: 54vw;
+    margin: 0 0 0 auto;
+  }
+  html body .container .grid .headerMain .headerSection .navigation {
+    display: block;
+    text-align: center;
+  }
+  html body .container .grid .headerMain .headerSection .navigation .menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background-color: #363841;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    z-index: 10;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden !important;
+  }
+  html body .container .grid .headerMain .headerSection .navigation .menu li:nth-child(4) {
+    display: block;
+    padding-top: 10rem;
+    font-size: 3rem;
+    font-family: cursive;
+  }
+  html body .container .grid .headerMain .headerSection .navigation .menu li:nth-child(4) a {
+    border: none;
+  }
+  html body .container .grid .headerMain .headerSection .navigation .menu li + li {
+    margin-left: unset;
+  }
+  html body .container .grid .headerMain .headerSection .navigation .menu a {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-bottom: 2px solid white;
+  }
+  html body .container .grid .headerMain .headerSection .navigation.active .menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  html body .container .grid .headerMain .headerSection .btn-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  html body .container .grid .headerMain .headerSection .btn-mobile .hamburger {
+    border-top: 2px solid;
+    width: 20px;
+    color: white;
+  }
+  html body .container .grid .headerMain .headerSection .hamburger::after,
+  html body .container .grid .headerMain .headerSection .hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    position: relative;
+  }
+  html body .container .grid .headerMain .headerSection .navigation.active .hamburger {
+    border-top-color: transparent;
+  }
+  html body .container .grid .headerMain .headerSection .navigation.active .hamburger::before {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  html body .container .grid .headerMain .headerSection .navigation.active .hamburger::after {
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+    top: -7px;
+  }
+  html body .container .grid .bannerMain .bannerMainOne .bannerTitle {
+    color: white;
+    font-size: 2.5rem;
+  }
+  html body .container .grid .bannerMain .bannerMainOne .bannerParagraph {
+    font-size: 1.5rem;
+  }
+  html body .container .grid .aboutMain {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: main;
+    background-color: #925492;
+  }
+  html body .container .grid .footerMain {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: footer;
+    background-color: #857185;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 81.25%;
+  }
+  html body .headerMain .headerSection {
+    width: 55vw;
+  }
+}
+/*# sourceMappingURL=main.css.map */
