@@ -1,0 +1,33 @@
+.footerMain {
+  grid-area: footer;
+  height: 23rem;
+  @include standard;
+
+  .backgroundFooter {
+    background-color: #2A2C34;
+
+    .carousel {
+      width: 80vw;
+      margin: 5rem auto;
+      padding: 4rem;
+      color: white;
+      text-align: center;
+
+
+
+      .slick-next:before {
+        content: '>';
+        font-family: 'Poppins';
+        font-weight: 700;
+        font-size: 2rem;
+      }
+
+      .slick-prev:before {
+        content: '<';
+        font-family: 'Poppins';
+        font-weight: 700;
+        font-size: 2rem;
+      }
+    }
+  }
+}

@@ -6,3 +6,4 @@ import {
   ColorsBackgroundTwo,
   ColorsBackgroundThree,
 } from "./background.js";
+import { slick } from "./slick.js";

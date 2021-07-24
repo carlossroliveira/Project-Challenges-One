@@ -277,16 +277,68 @@
   display: none;
 }
 
+.footerMain {
+  grid-area: footer;
+  height: 23rem;
+}
+
+.footerMain .standardTitle {
+  font-family: 'Poppins';
+  width: 80vw;
+  margin: 0rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  color: #2A2C34;
+  position: relative;
+  padding-top: 5rem;
+}
+
+.footerMain .standardTitle .range {
+  position: absolute;
+  margin-top: 1rem;
+  width: 0.313rem;
+  height: 4rem;
+  background-color: #FD300F;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.footerMain .backgroundFooter {
+  background-color: #2A2C34;
+}
+
+.footerMain .backgroundFooter .carousel {
+  width: 80vw;
+  margin: 5rem auto;
+  padding: 4rem;
+  color: white;
+  text-align: center;
+}
+
+.footerMain .backgroundFooter .carousel .slick-next:before {
+  content: '>';
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.footerMain .backgroundFooter .carousel .slick-prev:before {
+  content: '<';
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 2rem;
+}
+
 /* ===== Desktop ============================== */
 @media (max-width: 1440px) {
   html {
     font-size: 100%;
-  }
-  html body .carousel {
-    width: 80vw;
-    margin: 5rem auto;
-    padding: 4rem;
-    background-color: violet;
   }
   html body .container .grid {
     display: -ms-grid;
@@ -294,48 +346,6 @@
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: "heade heade heade heade" "modal modal modal modal" "main main main main" "footer footer footer footer";
-  }
-  html body .container .grid .footerMain {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-area: footer;
-    height: 23rem;
-  }
-  html body .container .grid .footerMain .standardTitle {
-    font-family: 'Poppins';
-    width: 80vw;
-    margin: 0rem auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-transform: uppercase;
-    letter-spacing: 1.3px;
-    color: #2A2C34;
-    position: relative;
-    padding-top: 5rem;
-  }
-  html body .container .grid .footerMain .standardTitle .range {
-    position: absolute;
-    margin-top: 1rem;
-    width: 0.313rem;
-    height: 4rem;
-    background-color: #FD300F;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
-  html body .container .grid .footerMain .backgroundFooter {
-    background-color: #2A2C34;
-  }
-  html body .container .grid .footerMain .backgroundFooter section {
-    color: white;
-    text-align: center;
-    width: 80vw;
-    margin: 5rem auto;
-    padding: 4rem;
   }
 }
 
