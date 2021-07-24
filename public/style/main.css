@@ -156,6 +156,127 @@
   font-size: 1.2rem !important;
 }
 
+.aboutMain {
+  grid-area: main;
+  background-color: white;
+  height: 30rem;
+}
+
+.aboutMain .standardTitle {
+  font-family: 'Poppins';
+  width: 80vw;
+  margin: 0rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  color: #2A2C34;
+  position: relative;
+  padding-top: 5rem;
+}
+
+.aboutMain .standardTitle .range {
+  position: absolute;
+  margin-top: 1rem;
+  width: 0.313rem;
+  height: 4rem;
+  background-color: #FD300F;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.aboutMain .containerAbout {
+  background-color: #2A2C34;
+  color: white;
+  width: 80vw;
+  margin: 0rem auto;
+  margin-top: 5rem;
+  overflow: hidden;
+}
+
+.aboutMain .containerAbout .aboutNavigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  background-color: #646672;
+  /* ===== Classes adicionada pelo JS ============================== */
+}
+
+.aboutMain .containerAbout .aboutNavigation ul li {
+  padding: 15px 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.aboutMain .containerAbout .aboutNavigation ul li:hover {
+  color: #ffffffa4;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.aboutMain .containerAbout .aboutNavigation ul .backgroundOne {
+  background-color: #2A2C34;
+}
+
+.aboutMain .containerAbout .aboutNavigation ul .colorsOne {
+  color: white;
+  background-color: #2A2C34;
+}
+
+.aboutMain .containerAbout .aboutNavigation ul .colorsTwo {
+  color: white;
+  background-color: #2A2C34;
+}
+
+.aboutMain .containerAbout .aboutNavigation ul .colorsThree {
+  color: white;
+  background-color: #2A2C34;
+}
+
+.aboutMain .containerAbout .aboutNavigation ul .colorStandard {
+  color: white;
+  background-color: #646672;
+}
+
+.aboutMain .containerAbout section {
+  /* ===== Classes adicionada pelo JS ============================== */
+}
+
+.aboutMain .containerAbout section article {
+  padding: 3rem;
+}
+
+.aboutMain .containerAbout section .vision {
+  background-color: #2A2C34;
+  display: none;
+}
+
+.aboutMain .containerAbout section .values {
+  background-color: #2A2C34;
+  display: none;
+}
+
+.aboutMain .containerAbout section .mission-active {
+  display: block;
+}
+
+.aboutMain .containerAbout section .vision-active {
+  display: block;
+}
+
+.aboutMain .containerAbout section .values-active {
+  display: block;
+}
+
+.aboutMain .containerAbout section .mission-none {
+  display: none;
+}
+
 /* ===== Desktop ============================== */
 @media (max-width: 1440px) {
   html {
@@ -170,117 +291,13 @@
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: "heade heade heade heade" "modal modal modal modal" "main main main main" "footer footer footer footer";
-    /* .footerMain {
-            grid-area: footer;
-            background-color: rgb(133, 113, 133);
-          } */
   }
-  html body .container .grid .aboutMain {
-    -ms-grid-row: 3;
+  html body .container .grid .footerMain {
+    -ms-grid-row: 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
-    grid-area: main;
-    background-color: white;
-    height: 30rem;
-  }
-  html body .container .grid .aboutMain .aboutMainTwo {
-    font-family: 'Poppins';
-    width: 80vw;
-    margin: 0rem auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-transform: uppercase;
-    letter-spacing: 1.3px;
-    color: #2A2C34;
-    position: relative;
-    padding-top: 5rem;
-  }
-  html body .container .grid .aboutMain .aboutMainTwo .range {
-    position: absolute;
-    margin-top: 1rem;
-    width: 0.313rem;
-    height: 4rem;
-    background-color: #FD300F;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
-  html body .container .grid .aboutMain .containerAbout {
-    background-color: #2A2C34;
-    color: white;
-    width: 80vw;
-    margin: 0rem auto;
-    margin-top: 5rem;
-    overflow: hidden;
-  }
-  html body .container .grid .aboutMain .containerAbout .aboutNavigation ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    background-color: #646672;
-    /* ===== Classes adicionada pelo JS ============================== */
-  }
-  html body .container .grid .aboutMain .containerAbout .aboutNavigation ul li {
-    padding: 15px 20px;
-    font-weight: 700;
-    cursor: pointer;
-  }
-  html body .container .grid .aboutMain .containerAbout .aboutNavigation ul li:hover {
-    color: #ffffffa4;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-  html body .container .grid .aboutMain .containerAbout .aboutNavigation ul .backgroundOne {
-    background-color: #2A2C34;
-  }
-  html body .container .grid .aboutMain .containerAbout .aboutNavigation ul .colorsOne {
-    color: white;
-    background-color: #2A2C34;
-  }
-  html body .container .grid .aboutMain .containerAbout .aboutNavigation ul .colorsTwo {
-    color: white;
-    background-color: #2A2C34;
-  }
-  html body .container .grid .aboutMain .containerAbout .aboutNavigation ul .colorsThree {
-    color: white;
-    background-color: #2A2C34;
-  }
-  html body .container .grid .aboutMain .containerAbout .aboutNavigation ul .colorStandard {
-    color: white;
-    background-color: #646672;
-  }
-  html body .container .grid .aboutMain .containerAbout section {
-    /* ===== Classes adicionada pelo JS ============================== */
-  }
-  html body .container .grid .aboutMain .containerAbout section article {
-    padding: 3rem;
-  }
-  html body .container .grid .aboutMain .containerAbout section .vision {
-    background-color: #2A2C34;
-    display: none;
-  }
-  html body .container .grid .aboutMain .containerAbout section .values {
-    background-color: #2A2C34;
-    display: none;
-  }
-  html body .container .grid .aboutMain .containerAbout section .mission-active {
-    display: block;
-  }
-  html body .container .grid .aboutMain .containerAbout section .vision-active {
-    display: block;
-  }
-  html body .container .grid .aboutMain .containerAbout section .values-active {
-    display: block;
-  }
-  html body .container .grid .aboutMain .containerAbout section .mission-none {
-    display: none;
-  }
-  html body .container .grid .aboutMain .containerAbout section .aboutTitle {
-    background-color: #ad84ad;
+    grid-area: footer;
+    background-color: violet;
   }
 }
 

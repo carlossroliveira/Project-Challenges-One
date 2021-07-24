@@ -7,6 +7,8 @@
 
 @import '_header';
 @import '_bannerMain';
+@import '_aboutMain';
+@import '_variables_mixin';
 
 /* ===== Desktop ============================== */
 @media(max-width: 1440px) {
@@ -29,173 +31,17 @@
 
 
 
-          .aboutMain {
-            grid-area: main;
-            background-color: white;
 
-            height: 30rem;
 
-            .aboutMainTwo {
-              font-family: 'Poppins';
 
-              width: 80vw;
-              margin: 0rem auto;
 
-              display: flex;
-              justify-content: center;
 
-              text-transform: uppercase;
-              letter-spacing: 1.3px;
-              color: #2A2C34;
 
-              position: relative;
-              padding-top: 5rem;
 
-              .range {
-                position: absolute;
-                margin-top: 1rem;
-
-                width: 0.313rem;
-                height: 4rem;
-                background-color: #FD300F;
-                transform: rotate(90deg);
-              }
-            }
-
-            .containerAbout {
-              background-color: #2A2C34;
-              color: white;
-
-              width: 80vw;
-              margin: 0rem auto;
-              margin-top: 5rem;
-              overflow: hidden;
-
-              .aboutNavigation {
-
-                ul {
-                  display: flex;
-                  list-style: none;
-                  background-color: #646672;
-
-
-                  li {
-                    padding: 15px 20px;
-                    font-weight: 700;
-                    cursor: pointer;
-
-                    &:hover {
-                      color: #ffffffa4;
-                      transition: all 0.2s ease-in-out;
-                    }
-                  }
-
-                  /* ===== Classes adicionada pelo JS ============================== */
-                  .backgroundOne {
-                    background-color: #2A2C34;
-                  }
-
-                  .colorsOne {
-                    color: white;
-                    background-color: #2A2C34;
-                  }
-
-                  .colorsTwo {
-                    color: white;
-                    background-color: #2A2C34;
-                  }
-
-                  .colorsThree {
-                    color: white;
-                    background-color: #2A2C34;
-                  }
-
-                  .colorStandard {
-                    color: white;
-                    background-color: #646672;
-                  }
-
-                }
-              }
-
-              section {
-
-                article {
-                  padding: 3rem;
-                }
-
-                .vision {
-                  background-color: #2A2C34;
-                  display: none;
-                }
-
-                .values {
-                  background-color: #2A2C34;
-                  display: none;
-                }
-
-                /* ===== Classes adicionada pelo JS ============================== */
-                .mission-active {
-                  display: block;
-                }
-
-                .vision-active {
-                  display: block;
-                }
-
-                .values-active {
-                  display: block;
-                }
-
-                .mission-none {
-                  display: none;
-                }
-
-
-
-
-
-
-
-
-
-
-
-
-
-                .aboutTitle {
-
-                  background-color: rgb(173, 132, 173);
-                }
-              }
-            }
-
-
-
-
-
-
-
-
-
-
-
-
-
-          }
-
-
-
-
-
-
-
-
-
-          /* .footerMain {
+          .footerMain {
             grid-area: footer;
-            background-color: rgb(133, 113, 133);
-          } */
+            background-color: violet;
+          }
         }
       }
 
@@ -206,10 +52,7 @@
 /* ===== Tablet ============================== */
 @media(max-width: 1024px) {
   html {
-
     font-size: 93.75%; // Tamanho da fonte 15px
-
-    body {}
   }
 }
 

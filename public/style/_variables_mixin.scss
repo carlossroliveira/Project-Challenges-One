@@ -1,0 +1,25 @@
+
+
+@mixin standard {
+  .standardTitle {
+    font-family: 'Poppins';
+    width: 80vw;
+    margin: 0rem auto;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    color: #2A2C34;
+    position: relative;
+    padding-top: 5rem;
+
+    .range {
+      position: absolute;
+      margin-top: 1rem;
+      width: 0.313rem;
+      height: 4rem;
+      background-color: #FD300F;
+      transform: rotate(90deg);
+    }
+  }
+}
