@@ -16,7 +16,13 @@
     font-size: 100%; // Tamanho da fonte 16px
 
     body {
-      background-color: tomato; //tira essa linha
+
+      .carousel {
+        width: 80vw;
+        margin: 5rem auto;
+        padding: 4rem;
+        background-color: violet;
+      }
 
       .container {
         .grid {
@@ -40,7 +46,21 @@
 
           .footerMain {
             grid-area: footer;
-            background-color: violet;
+            height: 23rem;
+            @include standard;
+
+            .backgroundFooter {
+              background-color: #2A2C34;
+
+              section {
+                color: white;
+                text-align: center;
+                width: 80vw;
+                margin: 5rem auto;
+                padding: 4rem;
+              }
+            }
+
           }
         }
       }
@@ -185,18 +205,6 @@
               }
             }
           }
-
-          /* ===== Main - Two ============================== */
-          .aboutMain {
-            grid-area: main;
-            background-color: rgb(146, 84, 146);
-          }
-
-          /* ===== Footer ============================== */
-          .footerMain {
-            grid-area: footer;
-            background-color: rgb(133, 113, 133);
-          }
         }
       }
     }
@@ -208,7 +216,6 @@
     font-size: 81.25%; // Tamanho da fonte 13px
 
     body {
-
       .headerMain {
         .headerSection {
           width: 55vw;

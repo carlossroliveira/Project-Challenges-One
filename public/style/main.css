@@ -159,7 +159,7 @@
 .aboutMain {
   grid-area: main;
   background-color: white;
-  height: 30rem;
+  height: 24rem;
 }
 
 .aboutMain .standardTitle {
@@ -282,8 +282,11 @@
   html {
     font-size: 100%;
   }
-  html body {
-    background-color: tomato;
+  html body .carousel {
+    width: 80vw;
+    margin: 5rem auto;
+    padding: 4rem;
+    background-color: violet;
   }
   html body .container .grid {
     display: -ms-grid;
@@ -297,7 +300,42 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-area: footer;
-    background-color: violet;
+    height: 23rem;
+  }
+  html body .container .grid .footerMain .standardTitle {
+    font-family: 'Poppins';
+    width: 80vw;
+    margin: 0rem auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    color: #2A2C34;
+    position: relative;
+    padding-top: 5rem;
+  }
+  html body .container .grid .footerMain .standardTitle .range {
+    position: absolute;
+    margin-top: 1rem;
+    width: 0.313rem;
+    height: 4rem;
+    background-color: #FD300F;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  html body .container .grid .footerMain .backgroundFooter {
+    background-color: #2A2C34;
+  }
+  html body .container .grid .footerMain .backgroundFooter section {
+    color: white;
+    text-align: center;
+    width: 80vw;
+    margin: 5rem auto;
+    padding: 4rem;
   }
 }
 
@@ -321,8 +359,6 @@
         grid-template-areas: "heade" "modal" "main" "footer";
     /* ===== header ============================== */
     /* ===== Main - One ============================== */
-    /* ===== Main - Two ============================== */
-    /* ===== Footer ============================== */
   }
   html body .container .grid .headerMain .headerSection {
     width: 54vw;
@@ -415,18 +451,6 @@
   }
   html body .container .grid .bannerMain .bannerMainOne .bannerParagraph {
     font-size: 1.5rem;
-  }
-  html body .container .grid .aboutMain {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: main;
-    background-color: #925492;
-  }
-  html body .container .grid .footerMain {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    grid-area: footer;
-    background-color: #857185;
   }
 }
 
