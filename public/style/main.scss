@@ -88,6 +88,7 @@
 
                     a {
                       border: none;
+                      
                     }
                   }
 
@@ -97,7 +98,7 @@
                   }
 
                   a {
-                    width: 400px;
+                    width: 320px;
                     margin: 0 auto;
                     padding: 20px;
                     border-bottom: 2px solid $color-secondary;
@@ -167,6 +168,12 @@
               }
             }
           }
+
+          .footerMain {
+            .standardTitle {
+              padding-top: 10rem;
+            }
+          }
         }
       }
     }
@@ -178,9 +185,16 @@
     font-size: 81.25%; // Tamanho da fonte 13px
 
     body {
+
       .headerMain {
         .headerSection {
           width: 55vw;
+        }
+      }
+
+      .footerMain {
+        .standardTitle {
+          padding-top: 14rem !important;
         }
       }
     }
