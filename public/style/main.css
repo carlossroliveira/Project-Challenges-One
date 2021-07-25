@@ -279,7 +279,7 @@
 
 .footerMain {
   grid-area: footer;
-  height: 23rem;
+  height: 28rem;
 }
 
 .footerMain .standardTitle {
@@ -314,6 +314,7 @@
 }
 
 .footerMain .backgroundFooter .carousel {
+  font-family: 'Poppins';
   width: 80vw;
   margin: 5rem auto;
   padding: 4rem;
@@ -333,6 +334,14 @@
   font-family: 'Poppins';
   font-weight: 700;
   font-size: 2rem;
+}
+
+.footerMain .backgroundFooter .carousel .slick-dots {
+  display: none !important;
+}
+
+.footerMain .backgroundFooter .carousel .servTitle {
+  color: #A7CB35;
 }
 
 /* ===== Desktop ============================== */

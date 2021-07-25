@@ -7,3 +7,7 @@ import {
   ColorsBackgroundThree,
 } from "./background.js";
 import { slick } from "./slick.js";
+import { aboutAPI } from "./about.js";
+import { servicesAPI } from "./services.js";
+
+

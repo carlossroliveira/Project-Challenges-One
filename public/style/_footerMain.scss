@@ -1,12 +1,13 @@
 .footerMain {
   grid-area: footer;
-  height: 23rem;
+  height: 28rem;
   @include standard;
 
   .backgroundFooter {
     background-color: #2A2C34;
 
     .carousel {
+      font-family: 'Poppins';
       width: 80vw;
       margin: 5rem auto;
       padding: 4rem;
@@ -25,6 +26,14 @@
         font-family: 'Poppins';
         font-weight: 700;
         font-size: 2rem;
+      }
+
+      .slick-dots {
+        display: none !important;
+      }
+
+      .servTitle {
+        color: #A7CB35;
       }
     }
   }
