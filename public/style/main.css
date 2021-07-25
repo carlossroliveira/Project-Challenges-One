@@ -1,3 +1,4 @@
+/* ===== Configuration initial ============================== */
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +6,11 @@
           box-sizing: border-box;
 }
 
+/* ===== Color ============================== */
+/* ===== Mixin ============================== */
 /* ===== Header ============================== */
 .headerMain {
   grid-area: heade;
-  background-color: #363841;
   height: 70px;
   padding: 1rem;
   -webkit-box-sizing: border-box;
@@ -84,7 +86,7 @@
 .headerMain .headerSection .navigation > ul a {
   font-family: 'Poppins';
   font-weight: 300;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   padding: 0.625rem 0.313rem;
 }
@@ -104,7 +106,7 @@
 }
 
 .headerMain .headerSection .menu a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   display: block;
   padding: 0.5rem;
@@ -114,6 +116,8 @@
   display: none;
 }
 
+/* ===== Color ============================== */
+/* ===== Mixin ============================== */
 /* ===== Main - One ============================== */
 .bannerMain {
   grid-area: modal;
@@ -121,6 +125,7 @@
 
 .bannerMain .bannerMainOne {
   background-color: #000000;
+  font-family: 'Poppins';
   height: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,10 +144,9 @@
 
 .bannerMain .bannerMainOne .bannerTitle {
   width: 80vw;
-  color: white;
+  color: #ffffff;
   font-weight: 400;
   text-align: center;
-  font-family: 'Poppins';
   font-size: 2rem !important;
 }
 
@@ -152,13 +156,15 @@
   margin-top: 1rem;
   color: #ffffffa4;
   text-align: center;
-  font-family: 'Poppins';
   font-size: 1.2rem !important;
 }
 
+/* ===== Color ============================== */
+/* ===== Mixin ============================== */
+/* ===== Main - Two ============================== */
 .aboutMain {
   grid-area: main;
-  background-color: white;
+  background-color: #ffffff;
   height: 24rem;
 }
 
@@ -191,7 +197,7 @@
 
 .aboutMain .containerAbout {
   background-color: #2A2C34;
-  color: white;
+  color: #ffffff;
   width: 80vw;
   margin: 0rem auto;
   margin-top: 5rem;
@@ -224,22 +230,22 @@
 }
 
 .aboutMain .containerAbout .aboutNavigation ul .colorsOne {
-  color: white;
+  color: #ffffff;
   background-color: #2A2C34;
 }
 
 .aboutMain .containerAbout .aboutNavigation ul .colorsTwo {
-  color: white;
+  color: #ffffff;
   background-color: #2A2C34;
 }
 
 .aboutMain .containerAbout .aboutNavigation ul .colorsThree {
-  color: white;
+  color: #ffffff;
   background-color: #2A2C34;
 }
 
 .aboutMain .containerAbout .aboutNavigation ul .colorStandard {
-  color: white;
+  color: #ffffff;
   background-color: #646672;
 }
 
@@ -277,6 +283,9 @@
   display: none;
 }
 
+/* ===== Color ============================== */
+/* ===== Mixin ============================== */
+/* ===== Footer ============================== */
 .footerMain {
   grid-area: footer;
   height: 28rem;
@@ -318,7 +327,7 @@
   width: 80vw;
   margin: 5rem auto;
   padding: 4rem;
-  color: white;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -344,6 +353,8 @@
   color: #A7CB35;
 }
 
+/* ===== Color ============================== */
+/* ===== Mixin ============================== */
 /* ===== Desktop ============================== */
 @media (max-width: 1440px) {
   html {
@@ -417,7 +428,7 @@
     width: 400px;
     margin: 0 auto;
     padding: 20px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #ffffff;
   }
   html body .container .grid .headerMain .headerSection .navigation.active .menu {
     height: calc(100vh - 70px);
@@ -438,7 +449,7 @@
   html body .container .grid .headerMain .headerSection .btn-mobile .hamburger {
     border-top: 2px solid;
     width: 20px;
-    color: white;
+    color: #ffffff;
   }
   html body .container .grid .headerMain .headerSection .hamburger::after,
   html body .container .grid .headerMain .headerSection .hamburger::before {
@@ -465,7 +476,7 @@
     top: -7px;
   }
   html body .container .grid .bannerMain .bannerMainOne .bannerTitle {
-    color: white;
+    color: #ffffff;
     font-size: 2.5rem;
   }
   html body .container .grid .bannerMain .bannerMainOne .bannerParagraph {

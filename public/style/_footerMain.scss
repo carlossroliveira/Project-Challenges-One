@@ -1,29 +1,34 @@
+@import '_variables_mixin';
+
+/* ===== Footer ============================== */
 .footerMain {
   grid-area: footer;
   height: 28rem;
   @include standard;
 
   .backgroundFooter {
-    background-color: #2A2C34;
+    background-color: $background-Main;
 
     .carousel {
-      font-family: 'Poppins';
-      width: 80vw;
+      @include mainSource;
+      @include widthMax;
       margin: 5rem auto;
       padding: 4rem;
-      color: white;
-      text-align: center;
+      color: $color-secondary;
+      @include textCenter;
 
       .slick-next:before {
         content: '>';
-        font-family: 'Poppins';
+
+        @include mainSource;
         font-weight: 700;
         font-size: 2rem;
       }
 
       .slick-prev:before {
         content: '<';
-        font-family: 'Poppins';
+
+        @include mainSource;
         font-weight: 700;
         font-size: 2rem;
       }
@@ -33,7 +38,7 @@
       }
 
       .servTitle {
-        color: #A7CB35;
+        color: $color-title;
       }
     }
   }

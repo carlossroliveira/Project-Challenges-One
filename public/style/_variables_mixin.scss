@@ -1,15 +1,51 @@
+/* ===== Color ============================== */
+$background-Main: #2A2C34;
+$color-Main: #2A2C34;
+$background-secondary: #ffffff;
+$color-secondary: #ffffff;
+$color-title: #A7CB35;
+$background-tertiary:#646672;
+$background-tertiary-header:#363841;
+
+/* ===== Mixin ============================== */
+
+@mixin mainSource {
+  font-family: 'Poppins';
+}
+
+@mixin textCenter {
+  text-align: center;
+}
+
+@mixin widthMax {
+  width: 80vw;
+}
+
+@mixin displayBlock {
+  display: block;
+}
+
+@mixin displayNone {
+  display: none;
+}
+
+@mixin displayFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 
 @mixin standard {
   .standardTitle {
-    font-family: 'Poppins';
-    width: 80vw;
+    @include mainSource;
+    @include widthMax;
     margin: 0rem auto;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
     letter-spacing: 1.3px;
-    color: #2A2C34;
+    color: $color-Main;
     position: relative;
     padding-top: 5rem;
 

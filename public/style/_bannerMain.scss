@@ -1,10 +1,12 @@
+@import '_variables_mixin';
+
 /* ===== Main - One ============================== */
 .bannerMain {
   grid-area: modal;
 
   .bannerMainOne {
     background-color: #000000;
-
+    @include mainSource;
     height: 20rem;
     display: flex;
     align-items: center;
@@ -12,21 +14,19 @@
     justify-content: center;
 
     .bannerTitle {
-      width: 80vw;
-      color: white;
+      @include widthMax;
+      color: $color-secondary;
       font-weight: 400;
-      text-align: center;
-      font-family: 'Poppins';
+      @include textCenter;
       font-size: 2rem !important;
     }
 
     .bannerParagraph {
-      width: 80vw;
+      @include widthMax;
       font-weight: 300;
       margin-top: 1rem;
       color: #ffffffa4;
-      text-align: center;
-      font-family: 'Poppins';
+      @include textCenter;
       font-size: 1.2rem !important;
     }
   }

@@ -1,17 +1,18 @@
 @import '_variables_mixin';
 
+/* ===== Main - Two ============================== */
+
 .aboutMain {
   grid-area: main;
-  background-color: white;
+  background-color: $background-secondary;
   height: 24rem;
 
   @include standard;
   
-
   .containerAbout {
-    background-color: #2A2C34;
-    color: white;
-    width: 80vw;
+    background-color: $background-Main;
+    color: $color-secondary;
+    @include widthMax;
     margin: 0rem auto;
     margin-top: 5rem;
     overflow: hidden;
@@ -21,7 +22,7 @@
       ul {
         display: flex;
         list-style: none;
-        background-color: #646672;
+        background-color: $background-tertiary;
 
         li {
           padding: 15px 20px;
@@ -36,27 +37,27 @@
 
         /* ===== Classes adicionada pelo JS ============================== */
         .backgroundOne {
-          background-color: #2A2C34;
+          background-color: $background-Main;
         }
 
         .colorsOne {
-          color: white;
-          background-color: #2A2C34;
+          color: $color-secondary;
+          background-color: $background-Main;
         }
 
         .colorsTwo {
-          color: white;
-          background-color: #2A2C34;
+          color: $color-secondary;
+          background-color: $background-Main;
         }
 
         .colorsThree {
-          color: white;
-          background-color: #2A2C34;
+          color: $color-secondary;
+          background-color: $background-Main;
         }
 
         .colorStandard {
-          color: white;
-          background-color: #646672;
+          color: $color-secondary;
+          background-color: $background-tertiary;
         }
       }
     }
@@ -67,30 +68,30 @@
       }
 
       .vision {
-        background-color: #2A2C34;
-        display: none;
+        background-color: $background-Main;
+        @include displayNone;
       }
 
       .values {
-        background-color: #2A2C34;
-        display: none;
+        background-color: $background-Main;
+        @include displayNone;
       }
 
       /* ===== Classes adicionada pelo JS ============================== */
       .mission-active {
-        display: block;
+        @include displayBlock;
       }
 
       .vision-active {
-        display: block;
+        @include displayBlock;
       }
 
       .values-active {
-        display: block;
+        @include displayBlock;
       }
 
       .mission-none {
-        display: none;
+        @include displayNone;
       }
     }
   }
