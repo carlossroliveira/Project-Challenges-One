@@ -1,0 +1,8 @@
+Sobre o projeto.
+
+No Html5 foram utilizados algumas, tag especificas para deixa o máximo semático, 
+na folha de estilo utilizando o sass, fiz o wireframe usando o css-grid composições com flexbox.
+O JavaScript fiz as interações usando o, mas recente possível do ECMAScript.
+Biblioteca Slick.js usei via CDN para fazer efeito do carrossel.
+
+Neste projeto foram utilizados as tecnologias Html5, Sass, JavaScript, biblioteca Slick.js.
