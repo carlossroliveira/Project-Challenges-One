@@ -7,7 +7,7 @@
 
 ## Site / API
 
-Cosumindo dados da API interna para consulta informações e inserir via HTML.
+Consumindo dados da API interna para consulta informações e inserir via HTML.
 
 ## Start project
 
@@ -16,14 +16,14 @@ Cosumindo dados da API interna para consulta informações e inserir via HTML.
 
 # Primeiro você baixa o VSCode, depois faz a instalação da extensão do “Live Server”
 # Execute “Live Server”
-$ Acesse http://127.0.0.1:5500/ no seu navagador.
+$ Acesse http://127.0.0.1:5500/ no seu navegador.
 ```
 or
 
 ```bash
 # Baixe XAMPP ou MAMP # Execute
 # coloque o projeto dentro da pasta com o nome htdocs
-$ Acesse http://localhost:3000 no seu navagador.
+$ Acesse http://localhost:3000 no seu navegador.
 ```
 
 
