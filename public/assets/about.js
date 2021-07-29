@@ -6,10 +6,11 @@ export const aboutAPI = async () => {
   try {
     const API = await fetch("./api/about.json");
     const response = await API.json();
+    const { Missao, Visao, Valores } = response.about[0];
 
-    elementMissionTwoAPI.innerHTML = response.about[0].Missão;
-    elementVisionTwoAPI.innerHTML = response.about[0].Visão;
-    elementValuesTwoAPI.innerHTML = response.about[0].Valores;
+    elementMissionTwoAPI.innerHTML = Missao;
+    elementVisionTwoAPI.innerHTML = Visao;
+    elementValuesTwoAPI.innerHTML = Valores;
   } catch (error) {
     console.log(`Error Message => ${error}`);
   }
